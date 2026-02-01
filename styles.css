@@ -1,0 +1,77 @@
+html {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+body, body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body {
+  padding: 0.5rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 1rem;
+}
+.output-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  max-width: 100%;
+  overflow: auto;
+}
+.output {
+  image-rendering: pixelated;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 20ch auto 10ch;
+  gap: 0.2rem;
+}
+.field\:hidden {
+  display: none;
+}
+
+
+.control {
+  font-size: 1rem;
+  height: 1.6rem;
+}
+
+.control:not(.control\:select) {
+  width: 100%;
+}
+.control\:select {
+  padding: 0.2rem;
+}
+.value-box {
+  padding-left: 0.5rem;
+}
+
+.label {
+  justify-self: right;
+  padding-right: 0.5rem;
+}
+
+.palette {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.palette-box {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+
