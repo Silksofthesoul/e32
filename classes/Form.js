@@ -1,4 +1,4 @@
-import { createElement } from '/e32/functions/dom.js';
+import { createElement } from '../functions/dom.js';
 export class Form {
   title = null;
   fields = [];

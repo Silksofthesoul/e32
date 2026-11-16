@@ -2,9 +2,9 @@ import init, {
   // MemoryBuffer,
   // dither_image,
   DitherEngine,
-} from '/e32/png-processor/png_processor.js';
+} from '../png-processor/png_processor.js';
 
-import palette from '/e32/palette.js';
+import palette from '../palette.js';
 
 export class Engine {
   engine = null;
@@ -61,7 +61,7 @@ export class Engine {
 
   async initState() {
     this.selectedPalette = this.paletteOptions[0];
-    await this.loadInitImage('/e32/image.png');
+    await this.loadInitImage(new URL('../image.png', import.meta.url));
     this
       .onFileSelected()
       .update();
