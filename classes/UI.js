@@ -1,5 +1,5 @@
-import { Field } from '/e32/classes/Field.js';
-import { Form } from '/e32/classes/Form.js';
+import { Field } from './Field.js';
+import { Form } from './Form.js';
 
 export class UI {
   target = null;

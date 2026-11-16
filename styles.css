@@ -75,3 +75,15 @@ body {
 }
 
 
+
+
+/* Keep the standalone controls usable on narrow screens. */
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+  .form { padding: .5rem; }
+  .field { grid-template-columns: minmax(0, 1fr) auto; gap: .25rem .5rem; }
+  .label { grid-column: 1 / -1; justify-self: start; padding-right: 0; }
+  .control { min-width: 0; max-width: 100%; }
+  .palette { flex-wrap: wrap; }
+  .value-box { min-width: 0; }
+}

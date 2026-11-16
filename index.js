@@ -1,6 +1,6 @@
 
-import UI      from '/e32/classes/UI.js';
-import Engine  from '/e32/classes/Engine.js';
+import UI      from './classes/UI.js';
+import Engine  from './classes/Engine.js';
 
 async function run() {
   const engine = new Engine({target: '#output'});
